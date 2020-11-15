@@ -1,0 +1,85 @@
+卷 Windows 的文件夹 PATH 列表
+卷序列号为 A840-D8EC
+
+│  list.txt
+│  log.txt
+│  main.c
+│  Makefile
+│  Makefile.build
+│  netprint_client.c
+│  说明.txt
+│  
+├─debug
+│      debug_manager.c
+│      Makefile
+│      netprint.c
+│      stdout.c
+│      
+├─display
+│      disp_manager.c
+│      fb.c
+│      Makefile
+│      
+├─encoding
+│      ascii.c
+│      encoding_manager.c
+│      Makefile
+│      utf-16be.c
+│      utf-16le.c
+│      utf-8.c
+│      
+├─file
+│      file.c
+│      Makefile
+│      
+├─fonts
+│      ascii.c
+│      fonts_manager.c
+│      freetype.c
+│      gbk.c
+│      Makefile
+│      
+├─include
+│      config.h
+│      debug_manager.h
+│      disp_manager.h
+│      encoding_manager.h
+│      file.h
+│      fonts_manager.h
+│      input_manager.h
+│      page_manager.h
+│      picfmt_manager.h
+│      pic_operation.h
+│      render.h
+│      
+├─input
+│      input_manager.c
+│      Makefile
+│      stdin.c
+│      touchscreen.c
+│      
+├─page
+│      auto_page.c
+│      browse_page.c
+│      interval_page.c
+│      main_page.c
+│      Makefile
+│      manual_page.c
+│      page_manager.c
+│      setting_page.c
+│      
+└─render
+    │  Makefile
+    │  render.c
+    │  
+    ├─format
+    │      bmp.c
+    │      jpg.c
+    │      Makefile
+    │      picfmt_manager.c
+    │      
+    └─operation
+            Makefile
+            merge.c
+            zoom.c
+            

@@ -336,33 +336,14 @@ typedef enum {
 ​		merge用于将小图标合并入背景，或大图标下。
 
 ```c
-/**********************************************************************
- * 函数名称： PicMergeRegion
- * 功能描述： 把新图片的某部分, 合并入老图片的指定区域
- * 输入参数： iStartXofNewPic, iStartYofNewPic : 从新图片的(iStartXofNewPic, iStartYofNewPic)座标处开始读出数据用于合并
- *            iStartXofOldPic, iStartYofOldPic : 合并到老图片的(iStartXofOldPic, iStartYofOldPic)座标去
- *            iWidth, iHeight                  : 合并区域的大小
- *            ptNewPic                         : 新图片
- *            ptOldPic                         : 老图片
- * 输出参数： 无
- * 返 回 值： 0 - 成功, 其他值 - 失败
- ***********************************************************************/
+
 int PicMergeRegion(int iStartXofNewPic, int iStartYofNewPic, int iStartXofOldPic, int iStartYofOldPic, int iWidth, int iHeight, PT_PixelDatas ptNewPic, PT_PixelDatas ptOldPic)
 ```
 
 ​		zoom用于图片的缩放。
 
 ```c
-/**********************************************************************
- * 函数名称： PicZoom
- * 功能描述： 近邻取样插值方法缩放图片
- *            注意该函数会分配内存来存放缩放后的图片,用完后要用free函数释放掉
- *            "近邻取样插值"的原理请参考网友"lantianyu520"所著的"图像缩放算法"
- * 输入参数： ptOriginPic - 内含原始图片的象素数据
- *            ptBigPic    - 内含缩放后的图片的象素数据
- * 输出参数： 无
- * 返 回 值： 0 - 成功, 其他值 - 失败
- ***********************************************************************/
+
 int PicZoom(PT_PixelDatas ptOriginPic, PT_PixelDatas ptZoomPic)
 ```
 
